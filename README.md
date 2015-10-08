@@ -6,7 +6,7 @@ Do you want to know **right away** when your users do something **really importa
 
 # Why use Slacktivity?
 
-Slacktivity has a different use case than traditional analytics platforms such as Google Analytics and Mixpanel. These platforms are fantastic for gathering tons of data on users and giving a clean interface to later interpret user actions. Slacktivity, on the other hand, shines when there are *special* and *relatively rare* user events that you wanted to be notified of right away.
+Slacktivity has a different use case than traditional analytics platforms such as [Google Analytics](http://www.google.com/analytics/) and [Mixpanel](https://mixpanel.com). These platforms are fantastic for gathering tons of data on users and giving a clean interface to later interpret user behavior. Slacktivity, on the other hand, shines when there are *special* and *relatively rare* user events that you wanted to be notified of *right away*.
 
 Some examples of when Slacktivity would be useful are:
 
