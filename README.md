@@ -1,6 +1,6 @@
 # Slacktivity
 
-Do you want to know **right away** when your users do something **really important**? Slacktivity is a lightweight Javascript analytics library that allows you to send crucial user activity directly to your team's Slack. It's especially great for early-stage startups to know exactly what their early users are doing.
+Do you want to know **right away** when your users do something **really important**? Slacktivity is a lightweight Javascript analytics library that allows you to send crucial user activity directly to your team's Slack. It's especially great for startups to know exactly what their early users are doing.
 
 ![demo](http://i.imgur.com/IOBUuja.gif)
 
