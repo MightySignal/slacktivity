@@ -16,10 +16,18 @@ Some examples of when Slacktivity would be useful are:
 
 ## Installation
 
+```
 bower install slacktivity
+```
 or
+
+```Linux
 npm install slacktivity
-or just copy slacktivity.js into your project (and don't forget to import the JS file!)
+```
+
+or 
+
+Copy slacktivity.js into your project and add `<script src="slacktivity.js"` to your HTML header.
 
 ## Configuration
 
