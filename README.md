@@ -56,6 +56,7 @@ There are some specific keys you can include to modify the post’s metadata. By
 * “color”: The post sidebar color (a hex string like "#0393DD")
 * “fallback”: The notification’s banner text
 * “icon_url”: The icon next to the Slack post
+* "channel": Override the default webhook's channel to send to other channels (ex. "#random")
 
 To fire an event, call:
 ```Javascript

@@ -55,7 +55,8 @@
 
 		// extract post-level metadata from custom data
 		specific_keys = [
-			"icon_url"
+			"icon_url",
+			"channel"
 		];
 		specific_keys.forEach(function(key) {
 			if (data[key] !== undefined) {
