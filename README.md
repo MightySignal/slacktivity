@@ -39,7 +39,7 @@ In the config section at the top of `slacktivity.js`, add your own `webhook_url`
 
 ## Usage
 
-#Overview
+### Overview
 
 After you include the script into your page, it binds a Slacktivity object to the window. To fire an event to your Slack channel, call it from any Javascript on the page:
 ```Javascript
@@ -51,7 +51,7 @@ After you include the script into your page, it binds a Slacktivity object to th
 
 where the parameter is an object of key-value pairs of data. Feel free to specify any custom attributes in the parameter object.
 
-# Metadata Custom Keys
+### Metadata Custom Keys
 There are some specific keys you can include to modify the post’s metadata. By default, they include:
 * “title”: The post’s title
 * “text”: The text below the title
