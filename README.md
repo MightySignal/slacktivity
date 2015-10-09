@@ -27,7 +27,7 @@ npm install slacktivity
 
 or 
 
-Copy `slacktivity.js` into your project and add `<script src="slacktivity.js"` to your HTML header.
+Copy `slacktivity.js` into your project and add `<script src="slacktivity.js">` to your HTML header.
 
 ## Configuration
 
