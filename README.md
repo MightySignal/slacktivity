@@ -2,7 +2,7 @@
 
 Do you want to know **right away** when your users do something **really important**? Slacktivity is a lightweight analytics library that allows you to send crucial user activity directly to your team's Slack. It's especially great for early-stage startups to know exactly what their early users are doing.
 
-![demo]()
+![demo](http://i.imgur.com/IOBUuja.gif)
 
 # Why use Slacktivity?
 
