@@ -76,10 +76,10 @@
 		});
 
 		var request = new XMLHttpRequest();
-	    request.open('POST', config["webhook_url"], true);
-	    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+		request.open('POST', config["webhook_url"], true);
+		request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
 
-	    request.send(JSON.stringify(payload));
+		request.send(JSON.stringify(payload));
 	}
 
 	window.Slacktivity = Slacktivity;
