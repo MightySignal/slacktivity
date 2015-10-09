@@ -64,7 +64,7 @@ where the parameter is an object of key-value pairs of data. Feel free to specif
 
 	Specify any custom attributes as an object. For example,
 	```Javascript
-		window.Slacktivity.send({'test':''});
+	window.Slacktivity.send({'test':''});
 	```
 
 
