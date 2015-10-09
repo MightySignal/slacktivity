@@ -44,6 +44,7 @@
 			"title",
 			"text",
 			"fallback"
+			"color"
 		];
 		specific_keys.forEach(function(key) {
 			if (data[key] !== undefined) {
