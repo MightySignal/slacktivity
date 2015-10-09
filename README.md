@@ -37,6 +37,37 @@ In the config section at the top of `slacktivity.js`, add your own `webhook_url`
 
 ## Usage
 
+#Overview
+
+After you include the script into your page, it binds a Slacktivity object to the window. To fire an event to your Slack channel, call it from any Javascript on the page:
+```Javascript
+	window.Slacktivity.send({
+		“Event Header 1”: “Value 1”,
+		“Event Header 2”: “Value 2”
+	});
+```
+
+where the parameter is an object of key-value pairs of data. Feel free to specify any custom attributes in the parameter object.
+
+# Metadata Custom Keys
+	There are some specific keys you can include to modify the post’s metadata. By default, they include:
+	* “title”: The post’s title
+	* “text”: The text below the title
+	* “color”: The post sidebar color (a hex string like "#0393DD")
+	* “fallback”: the notification’s banner text
+	* “icon_url”: The icon next to the Slack post
+
+	To fire an event, call:
+	```Javascript
+	window.Slacktivity.send();
+	```
+
+	Specify any custom attributes as an object. For example,
+	```Javascript
+		window.Slacktivity.send({'test':''});
+	```
+
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/MightySignal/slacktivity. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
