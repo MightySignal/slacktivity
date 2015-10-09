@@ -1,6 +1,6 @@
 {
   "name": "slacktivity",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Slacktivity is a lightweight analytics library that allows you to send crucial user activity directly to your team's Slack. ",
   "main": "slacktivity.js",
   "scripts": {
