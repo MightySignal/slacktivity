@@ -1,6 +1,6 @@
 (function() {
 	var config = {
-		webhook_url: 'https://hooks.slack.com/services/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',
+		webhook_url: 'https://hooks.slack.com/services/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', // enter your channel's webhook
 		username: "Slacktivity", // or delete if you want to use webhook's default
 		fallback: "New Customer Event", // default notification banner text
 		icon_url: "https://slack.com/img/icons/app-57.png",
@@ -83,7 +83,6 @@
 	}
 
 	window.Slacktivity = Slacktivity;
-	debugger;
 
 	// Example usage
 	// window.Slacktivity.send({
