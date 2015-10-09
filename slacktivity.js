@@ -1,7 +1,7 @@
-(function(w) {
+(function() {
 	var config = {
 		webhook_url: 'https://hooks.slack.com/services/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',
-		username: "Custom",
+		title: "Custom",
 		icon_url: "https://slack.com/img/icons/app-57.png"
 	};
 
@@ -19,9 +19,21 @@
 		// set some defaults
 		var fields = {
 			Timestamp: new Date(),
-			URL: "www.google.com",
-			userAgent: w.navigator.userAgent
+			URL: window.location.href,
+			userAgent: window.navigator.userAgent
 		};
+
+		// extract specific keys to upper level
+		var specific_keys = [
+			"title",
+			"text"
+		];
+		specific_keys.forEach(function(key) {
+			if (data[key] !== undefined) {
+				payload.attachments[0][key] = data[key];
+				delete data[key]; // delete it so it doesn't show up in form
+			}
+		});
 
 		Object.keys(data).forEach(function(key) {
 			fields[key] = data[key];
@@ -42,8 +54,9 @@
 	    request.send(JSON.stringify(payload));
 	}
 
+	window.Slacktivity = Slacktivity;
 	// Example usage
 	// window.Slacktivity.send({
 	// 	"My Field": "Some Value"
 	// });
-})(window)
+})()
