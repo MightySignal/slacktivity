@@ -54,7 +54,7 @@ There are some specific keys you can include to modify the post’s metadata. By
 * “title”: The post’s title
 * “text”: The text below the title
 * “color”: The post sidebar color (a hex string like "#0393DD")
-* “fallback”: the notification’s banner text
+* “fallback”: The notification’s banner text
 * “icon_url”: The icon next to the Slack post
 
 To fire an event, call:
