@@ -64,7 +64,7 @@ window.Slacktivity.send();
 
 Specify any custom attributes as an object. For example,
 ```
-window.Slacktivity.send({"title": "Important Login Event!", "icon_url": "http://a.abcnews.go.com/images/Technology/GTY_Apple_CEO_Tim_Cook_MT_140716_25x14_992.jpg", "Company": "Apple, Inc.", "User Email": "tcook@apple.com”})
+window.Slacktivity.send({"title": "Important Login Event!", "icon_url": "http://a.abcnews.go.com/images/Technology/GTY_Apple_CEO_Tim_Cook_MT_140716_25x14_992.jpg", "Company": "Apple, Inc.", "User Email": "tcook@apple.com”, "text": "Tim Cook just logged in"})
 ```
 
 ## Contributing
