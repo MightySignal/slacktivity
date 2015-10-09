@@ -1,0 +1,22 @@
+{
+  "name": "slacktivity",
+  "main": "slacktivity.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/MightySignal/slacktivity",
+  "authors": [
+    "MightySignal"
+  ],
+  "description": "Slacktivity is a lightweight analytics library that allows you to send crucial user activity directly to your team's Slack.",
+  "keywords": [
+    "Slack",
+    "Analytics"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
