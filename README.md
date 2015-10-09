@@ -1,6 +1,6 @@
 # Slacktivity
 
-Do you want to know **right away** when your users do something **really important**? Slacktivity is a lightweight analytics library that allows you to send crucial user activity directly to your team's Slack. It's especially great for startups to know exactly what their early users are doing.
+Do you want to know **right away** when your users do something **really important**? Slacktivity is a lightweight analytics library that allows you to send crucial user activity directly to your team's Slack. It's especially great for early-stage startups to know exactly what their early users are doing.
 
 ![demo]()
 
@@ -10,7 +10,7 @@ Slacktivity has a different use case than traditional analytics platforms such a
 
 Some examples of when Slacktivity would be useful are:
 
-* You're an early stage startup with only a few users, and you want to be notified any time a user logs in.
+* You're an early-stage startup with only a few users, and you want to be notified any time a user logs in.
 * You're a SaaS company that just released a new, special feature to a small set of customers, and you want to know exactly when your customers use the new feature, and how they're using it.
 * You have a crucial feature that should never break, but you want to be notified *immediately* if it does.
 
