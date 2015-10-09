@@ -37,7 +37,7 @@
 			if (config[key] !== undefined) {
 				payload.attachments[0][key] = config[key];
 			}
-		})
+		});
 
 		// extract attachments-level meta data from custom data
 		var specific_keys = [
@@ -55,7 +55,7 @@
 		// extract post-level metadata from custom data
 		specific_keys = [
 			"icon_url"
-		]
+		];
 		specific_keys.forEach(function(key) {
 			if (data[key] !== undefined) {
 				payload[key] = data[key];
@@ -72,15 +72,15 @@
 				title: key,
 				value: fields[key],
 				short: true
-			}
+			};
 		});
 
 		var request = new XMLHttpRequest();
-		request.open('POST', config["webhook_url"], true);
+		request.open('POST', config.webhook_url, true);
 		request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
 
 		request.send(JSON.stringify(payload));
-	}
+	};
 
 	window.Slacktivity = Slacktivity;
 
@@ -88,4 +88,4 @@
 	// window.Slacktivity.send({
 	// 	"My Field": "Some Value"
 	// });
-})()
+})();
