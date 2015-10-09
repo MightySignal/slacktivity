@@ -43,7 +43,7 @@
 		var specific_keys = [
 			"title",
 			"text",
-			"fallback"
+			"fallback",
 			"color"
 		];
 		specific_keys.forEach(function(key) {
