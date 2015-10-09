@@ -16,7 +16,16 @@ Some examples of when Slacktivity would be useful are:
 
 ## Installation
 
+bower install slacktivity
+or
+npm install slacktivity
+or just copy slacktivity.js into your project (and don't forget to import the JS file!)
+
 ## Configuration
+
+If you haven’t already, set up an incoming WebHook on the integrations section of your slack.com dashboard. (Located at www.your_company.slack/services/new/incoming-webhook).
+
+In the config section at the top of slacktivity.js, add your own ‘webhook_url’. You also have the option to add a custom title, icon_url, or text in the config.
 
 ## Usage
 
