@@ -50,23 +50,22 @@ After you include the script into your page, it binds a Slacktivity object to th
 where the parameter is an object of key-value pairs of data. Feel free to specify any custom attributes in the parameter object.
 
 # Metadata Custom Keys
-	There are some specific keys you can include to modify the post’s metadata. By default, they include:
-	* “title”: The post’s title
-	* “text”: The text below the title
-	* “color”: The post sidebar color (a hex string like "#0393DD")
-	* “fallback”: the notification’s banner text
-	* “icon_url”: The icon next to the Slack post
+There are some specific keys you can include to modify the post’s metadata. By default, they include:
+* “title”: The post’s title
+* “text”: The text below the title
+* “color”: The post sidebar color (a hex string like "#0393DD")
+* “fallback”: the notification’s banner text
+* “icon_url”: The icon next to the Slack post
 
-	To fire an event, call:
-	```Javascript
-	window.Slacktivity.send();
-	```
+To fire an event, call:
+```Javascript
+window.Slacktivity.send();
+```
 
-	Specify any custom attributes as an object. For example,
-	```Javascript
-	window.Slacktivity.send({'test':''});
-	```
-
+Specify any custom attributes as an object. For example,
+```Javascript
+window.Slacktivity.send({"title": "Important Login Event!", "icon_url": "http://a.abcnews.go.com/images/Technology/GTY_Apple_CEO_Tim_Cook_MT_140716_25x14_992.jpg", "Company": "Apple, Inc.", "User Email": "tcook@apple.com”})
+```
 
 ## Contributing
 
