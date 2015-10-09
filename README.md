@@ -42,8 +42,8 @@ In the config section at the top of `slacktivity.js`, add your own `webhook_url`
 After you include the script into your page, it binds a Slacktivity object to the window. To fire an event to your Slack channel, call it from any Javascript on the page:
 ```Javascript
 	window.Slacktivity.send({
-		“Event Header 1”: “Value 1”,
-		“Event Header 2”: “Value 2”
+		“User Email”: “tcook@apple.com”,
+		“Company”: “Apple, Inc.”
 	});
 ```
 
