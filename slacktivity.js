@@ -1,8 +1,10 @@
 (function() {
 	var config = {
 		webhook_url: 'https://hooks.slack.com/services/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',
-		title: "Custom",
-		icon_url: "https://slack.com/img/icons/app-57.png"
+		username: "Slacktivity", // or delete if you want to use webhook's default
+		fallback: "New Customer Event", // default notification banner text
+		icon_url: "https://slack.com/img/icons/app-57.png",
+		color: "#0393DD" // default event color
 	};
 
 
@@ -11,26 +13,52 @@
 
 		var payload = {
 			attachments: [{
-				"fallback": "New Customer Event",
-				"text": "New Event!"
+				title: "New Slacktivity Event!",
+				fields: []
 			}]
 		};
 
 		// set some defaults
 		var fields = {
-			Timestamp: new Date(),
-			URL: window.location.href,
-			userAgent: window.navigator.userAgent
+			Timestamp: new Date().toLocaleString(),
+			"Referring URL": window.location.href,
+			"User Agent": window.navigator.userAgent
 		};
 
-		// extract specific keys to upper level
+		// move stuff from configs to post metadata
+		["username", "icon_emoji", "icon_url"].forEach(function(key) {
+			if (config[key] !== undefined) {
+				payload[key] = config[key];
+			}
+		});
+
+		// move stuff from configs to attachments metadata
+		["fallback", "color"].forEach(function(key) {
+			if (config[key] !== undefined) {
+				payload.attachments[0][key] = config[key];
+			}
+		})
+
+		// extract attachments-level meta data from custom data
 		var specific_keys = [
 			"title",
-			"text"
+			"text",
+			"fallback"
 		];
 		specific_keys.forEach(function(key) {
 			if (data[key] !== undefined) {
 				payload.attachments[0][key] = data[key];
+				delete data[key]; // delete it so it doesn't show up in form
+			}
+		});
+
+		// extract post-level metadata from custom data
+		specific_keys = [
+			"icon_url"
+		]
+		specific_keys.forEach(function(key) {
+			if (data[key] !== undefined) {
+				payload[key] = data[key];
 				delete data[key]; // delete it so it doesn't show up in form
 			}
 		});
@@ -55,6 +83,8 @@
 	}
 
 	window.Slacktivity = Slacktivity;
+	debugger;
+
 	// Example usage
 	// window.Slacktivity.send({
 	// 	"My Field": "Some Value"
