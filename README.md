@@ -83,6 +83,6 @@ The project is available as open source under the terms of the [MIT License](htt
 
 https://medium.com/@MightySignal/slacktivity-a-javascript-library-that-tells-you-right-away-when-your-users-do-something-really-efe18e6cbd74
 
-## More MightySignal Open Source
+## More Open Source Projects
 
-* [Slackiq](https://github.com/MightySignal/slackiq)
+[Slackiq](https://github.com/MightySignal/slackiq)
