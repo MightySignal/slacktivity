@@ -85,4 +85,4 @@ https://medium.com/@MightySignal/slacktivity-a-javascript-library-that-tells-you
 
 ## More Open Source Projects
 
-### [Slackiq](https://github.com/MightySignal/slackiq): Slackiq = Slack + Sidekiq
+### [Slackiq](https://github.com/MightySignal/slackiq)
