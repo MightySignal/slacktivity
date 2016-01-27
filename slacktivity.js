@@ -21,7 +21,7 @@
 		// set some defaults
 		var fields = {
 			Timestamp: new Date().toLocaleString(),
-			"Referring URL": window.location.href,
+			"Referring URL": decodeUriComponent(window.location.href),
 			"User Agent": window.navigator.userAgent
 		};
 
