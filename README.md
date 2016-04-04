@@ -81,7 +81,7 @@ The project is available as open source under the terms of the [MIT License](htt
 
 ## Blog Post about Slacktivity
 
-https://medium.com/@MightySignal/slacktivity-a-javascript-library-that-tells-you-right-away-when-your-users-do-something-really-efe18e6cbd74
+https://blog.mightysignal.com/slacktivity-a-javascript-library-that-tells-you-right-away-when-your-users-do-something-really-efe18e6cbd74
 
 ## More Open Source Projects
 
