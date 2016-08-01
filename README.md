@@ -55,7 +55,7 @@ where the parameter is an object of key-value pairs of data. Feel free to specif
 There are some specific keys you can include to modify the post’s metadata. By default, they include:
 * “title”: The post’s title
 * “text”: The text below the title
-* “color”: The post sidebar color (a hex string like "#0393DD")
+* “color”: The post sidebar color (a hex string like "#0393DD" or "good" [green], "warning" [yellow], "danger" [red])
 * “fallback”: The notification’s banner text
 * “icon_url”: The icon next to the Slack post
 * "channel": Override the default webhook's channel to send to other channels (ex. "#random")
